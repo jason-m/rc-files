@@ -83,7 +83,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	PROMPT=$'%F{green}%* %F{blue}%m @ %n (%.)%F{white}'
+	PROMPT=$'%F{green}%* %F{red}%m @ %n (%.)%F{white}'
 
     # enable syntax-highlighting
     if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && [ "$color_prompt" = yes ]; then
