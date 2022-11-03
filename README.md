@@ -1,5 +1,5 @@
 # rc-files
-dot_zshrc = .zshrc - mostly the .zshrc that comes with kali with some extra aliases
+dot_zshrc = .zshrc - mostly the .zshrc that comes with kali with a bunch of changes
 
 vim/ has all the vim stuff 
 
