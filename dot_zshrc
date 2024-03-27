@@ -82,9 +82,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-	PROMPT=$'%F{green}%* %F{blue}%m @ %n (%.)%F{white}'
-
+PROMPT=$'%F{green}%* %F{blue}%m @ %n (%.)%F{white}'
     # enable syntax-highlighting
     if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && [ "$color_prompt" = yes ]; then
 	. /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -131,9 +129,6 @@ if [ "$color_prompt" = yes ]; then
 	ZSH_HIGHLIGHT_STYLES[bracket-level-5]=fg=cyan,bold
 	ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
     fi
-else
-    PROMPT='${debian_chroot:+($debian_chroot)}%n@%m:%~%# '
-fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
